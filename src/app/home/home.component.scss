@@ -1,0 +1,115 @@
+.background{
+    // background-image:radial-gradient(circle at top, #FEE5E8, #F7E6F0, #E8F2FE, #9CE3F7);
+    background: #f0f0f0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.taskbar{
+    // padding: 10px 30px;
+    height: 50px;
+    position: relative;
+    top:98vh;
+    left:50vw;
+    margin: 0;
+    right: 0;
+    
+    // transform-origin:100%; 
+    transform:translate(-50%, -100%) perspective(15px) rotateX(2deg);
+    width: 60vw;
+    // border:2px solid #000;
+    background: rgba(0, 0, 0, 0.192);
+    border-radius: 1px;
+    
+}
+.taskbar-ele{
+    display: flex;
+    padding: 0px 30px;
+    // height: 60px;
+    position: absolute;
+    top:96vh;
+    font-size: 15px;
+    left:50vw;
+    margin: 0;
+    right: 0;
+    
+    // transform-origin:100%; 
+    transform:translate(-50%, -100%);
+    
+    width: 60vw;
+    &>div{
+        text-align: center;
+        transition: 0.5s all;
+        cursor: pointer;
+        outline: none;
+        &:hover{
+        transform: translateY(-20px);
+        }   
+    
+    }
+
+
+    // border:2px solid #000;
+}
+.about{
+    color: #555;
+    // color: #FF0C8F;
+    text-shadow: 0px 15px 10px rgb(130, 130, 130);
+
+}
+.exp{
+    color: #555;
+    // color: #FB7201;
+    text-shadow: 0px 15px 10px rgb(130, 130, 130);
+
+}
+.project{
+    color: #555;
+    // color: #BD00FF;
+    text-shadow: 0px 15px 10px rgb(130, 130, 130);
+
+}
+
+.skill{
+    color: #555;
+    // color: rgb(55, 5, 85);
+    text-shadow: 0px 15px 10px rgb(130, 130, 130);
+}
+.hireme{
+    color: #555;
+    // color: rgb(0, 12, 177);
+    text-shadow: 0px 15px 10px rgb(130, 130, 130);
+
+}
+.window{
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+    left:0;
+    top:0vh;
+    
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.selected{
+    color: #4EAE55;
+    transform: translateY(-5px);
+
+}
+@media(max-width:800px){
+    .taskbar{
+        width: 90vw;
+    }
+    .taskbar-ele{
+        font-size: 12px;
+        padding: 0 0px; 
+        width: 90vw;
+      &>div{
+        padding: 0 0;
+        }
+    }
+}

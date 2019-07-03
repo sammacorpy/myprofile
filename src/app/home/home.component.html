@@ -1,0 +1,36 @@
+<section class="background">
+  <section class="window">
+    <router-outlet></router-outlet>
+  </section>
+
+  <section class="taskbar">
+
+  </section>
+  <section class=" row no-gutter taskbar-ele">
+    <div class="col no-gutter icons about" [class.selected]="selected=='about'" (click)="selected='about'" routerLink="/u/#/aboutme">
+      <i class="fas fa-user-circle fa-2x"></i>
+      <br>
+      About
+    </div>
+    <div class="col no-gutter icons exp" [class.selected]="selected=='exp'" (click)="selected='exp'" routerLink="/u/#/myexperiences">
+      <i class="fas fa-tasks fa-2x"></i>
+      <br>
+      Experiences
+    </div>
+    <div class="col no-gutter icons skill" [class.selected]="selected=='skill'" (click)="selected='skill'" routerLink="/u/#/myskills">
+      <i class="fas fa-cogs fa-2x"></i>
+      <br>
+      Skillset
+    </div>
+    <div class="col no-gutter icons project" [class.selected]="selected=='project'" (click)="selected='project'" routerLink="/u/#/myprojects">
+      <i class="fab fa-buffer fa-2x"></i>
+      <br>
+      Projects
+    </div>
+    <div class="col no-gutter icons hireme" [class.selected]="selected=='hire'" (click)="selected='hire'" routerLink="/u/#/hireme">
+      <i class="fas fa-hashtag fa-2x"></i>
+      <br>
+      Hire-me
+    </div>
+  </section>
+</section>

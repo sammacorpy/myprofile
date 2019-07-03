@@ -1,0 +1,168 @@
+.background{
+    background: #f0f0f0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transform-origin: 50%;
+}
+
+.viewarea{
+    font-family: 'Maven Pro';
+    width: 100%;
+    left:50vw;
+    height: 87vh;
+    position: relative;
+    top:0;
+    overflow: auto;
+    transform: translate(-50%,0%);
+    padding:50px;
+
+}
+.link{
+    font-size: 10px;
+    margin: 0 5px 0 0; 
+}
+a{
+    color: steelblue;
+    // text-decoration: underline
+    &:any-link{
+        color: #4EAE55;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+// .expback{
+//     &>hr{
+//         margin:0;
+//         padding: 0;
+//     }
+// }
+
+.exp{
+    // margin: 0px 0 60px 0;
+    padding:5px 20px;
+    // border:1.5px solid rgb(206, 206, 206);
+    // background: #323232;
+    height: auto;
+    border-radius: 5px;
+    
+    &>.logo{
+        padding: 0;
+        max-width: 86px;
+        text-align: left;
+        &>img{
+
+            width: 50px;
+            height: 50px;
+        }
+        &>.dottt{
+            margin-top:10px;
+            width: 0px;
+            position: relative;
+            left:25px;
+            border-left:2px dashed rgb(189, 187, 187);
+            height: calc(100% - 60px); 
+        }
+        
+    }
+    &>.content{
+        padding: 0px 15px;
+        color: rgb(65, 65, 65);
+        &>header{
+            color:rgb(26, 25, 25);
+            font-size: 18px;
+            font-weight: 700;
+            &>span{
+                position: relative;
+                float: right;
+                color: #C13C69;
+            }
+        }
+        &>.subhead{
+            font-weight: 600;
+            color: #4EAE55;
+        }
+        &>.daterange{
+            font-size: 13px;
+            color: rgb(163, 162, 162);
+
+        }
+        &>.aboutcompany{
+            margin: 15px 0;
+            font-style: italic;
+            font-size: 15px;
+            font-weight: 100;
+            color: rgb(83, 83, 83);
+        }
+        &>.tasks{
+            margin: 40px 0 90px 0;
+            &>header{
+                
+                color: rgb(124, 124, 124);
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &>hr{
+                border-top:1px solid rgb(212, 212, 212); 
+                
+            }
+        }
+        &>.skills{
+            margin: 60px 0;
+            &>header{
+                color: rgb(124, 124, 124);
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+        
+    }
+}
+.mat-chip{
+    background: #555;
+    color: #eee;
+}
+
+@media(max-width:900px){
+    .viewarea{
+        padding: 15px 0;
+    }
+    .exp>.logo{
+       max-width: 100vw;
+    //    margin-bottom: 20px;
+    }
+    .exp{
+        margin: 0px 0 0px 0;
+        &>.content{
+            padding: 0;
+            &>header{
+                font-size: 16px;
+
+            }
+            &>.subhead{
+                font-size: 14px;
+            }
+            &>.daterange{
+                font-size: 12px;
+            }
+
+            &>.tasks{
+                font-size: 14px;
+                &>header{
+                    
+                    font-size: 14px;
+                }
+           
+            }
+            &>.skills{
+                margin: 30px 0;
+                &>header{
+                    font-size: 14px;
+                }
+            }
+            
+        }
+
+    }
+}

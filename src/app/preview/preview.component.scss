@@ -1,0 +1,26 @@
+#mypic{
+    width: 200px;
+    height: 200px;
+    border-radius:100%; 
+}
+.centerdig{
+    text-align: center;
+    position: relative;
+    top:50vh;
+    transform: translateY(-100%);
+    font-size: 20px;
+    font-family: 'Maven Pro';
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: #2525258e;
+}
+
+@media(max-width:800px){
+    .centerdig{
+        font-size: 15px;
+    }
+    #mypic{
+        width: 150px;
+        height: 150px;
+    }
+}

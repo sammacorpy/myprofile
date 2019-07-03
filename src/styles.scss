@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Raleway|Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    // background: #000077;
+    
+    
+}
+.no-gutter{
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    right: 0px;
+    background: #f0f0f0;
+}
+  
+  /* Track */
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(43, 43, 43); 
+  }

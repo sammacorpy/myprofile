@@ -1,0 +1,75 @@
+.background{
+    background: #f0f0f0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transform-origin: 50%;
+}
+
+.viewarea{
+    font-family: 'Maven Pro';
+    width: 100%;
+    left:50vw;
+    height: 87vh;
+    position: relative;
+    top:0;
+    overflow: auto;
+    transform: translate(-50%,0%);
+    padding:10px;
+
+}
+.skills{
+    &>.skill{
+        text-align: center;
+        max-width: 250px;
+        max-height: 250px;
+        padding:00px;
+        margin:20px auto;
+        font-size: 15px;
+        &>header{
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            &>img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &>svg{
+            // transform: rotateZ(-10deg);
+            &>circle{
+            
+                stroke: rgb(223, 223, 223);
+                stroke-dasharray: 722.86;
+                stroke-dashoffset: -722.86;
+                // animation: anim 2s linear 0s infinite;
+            }
+            // position: relative;
+            // top:0;
+            // left: 0;
+        }
+    }
+}
+.skilllevel{
+   &>svg{
+    width: 200px !important;
+    height: 200px !important;
+   }
+}
+@keyframes anim{
+    0%{
+        stroke-dashoffset: -722.86;
+
+    }
+    50%{
+        stroke-dashoffset: -1445.72;
+
+    }
+    100%{
+        stroke-dashoffset: -2168.58;
+    }
+}
